@@ -14,7 +14,13 @@ public class ProblemC {
 
     public static Integer near10(int one, int two){
 
-        return null;
+        if (Math.abs(one - 10) < Math.abs(two - 10)) {
+            return one;
+        } else if(Math.abs(one - 10) > Math.abs(two - 10)){
+            return two;
+        } else {
+            return 0;
+        }
     }
 
     /*
@@ -29,6 +35,9 @@ public class ProblemC {
 
     public static Boolean startWithIx(String phrase) {
 
-        return null;
+        if (phrase.charAt(1) == 'i'){
+            return phrase.charAt(2) == 'x';
+        }
+        return false;
     }
 }
