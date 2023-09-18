@@ -7,6 +7,9 @@ public class Calculator {
 
     // This method could throw an ArithmeticException
     public double divide(int x, int y) {
+        if (y == 0){
+            throw new ArithmeticException("Cannot divide by zero.");
+        }
         return x / y;
     }
 }
